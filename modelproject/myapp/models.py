@@ -7,3 +7,6 @@ class Student(models.Model):
     gender=models.CharField(max_length=40)
     dob=models.DateField()
     email=models.EmailField()
+    
+    def __str__(self):
+        return self.name
